@@ -1,0 +1,145 @@
+*{
+    padding: 0; margin: 0; 
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Recursive', sans-serif;
+}
+
+
+body{overflow: hidden;}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    animation: fadeIn 1s;
+    background-color: rgb(23, 38, 105);
+    background-position-x: center;
+}
+
+.bgImage img{
+    background-position-x: center;
+}
+
+
+
+/* weather */
+
+.js-weather{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+/* clock */
+
+
+.clock{
+    width: 500px;
+    margin: 0 auto;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    padding-top: 300px;
+    margin-bottom: 50px;
+    
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/* form name */
+.form,
+.greetings{
+    width : 600px;
+    margin: 0 auto;
+    display:none;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 100px;
+   
+
+}
+
+.form>input{
+    height: 70px;
+    background-color: transparent;
+    border: 0;
+    font-size: 45px;
+    outline: 0px solid transparent;
+    text-align: center;
+}
+.showing{
+    display: block;
+}
+
+
+
+/* todo list  */
+
+.toDoForm{
+    width: 500px;
+    margin: 0 auto;
+   
+   
+}
+
+.toDoForm input{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: 0;
+    outline: 0px solid transparent;
+    border-bottom: 5px solid #eee;
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.toDoList{
+    width: 500px;
+    margin: 0 auto;
+    color: #000;
+    background-color: rgba(255,255,255, 0.8);
+    font-size: 20px;
+
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+::-ms-input-placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+button{ 
+    width: 20px; height: 20px; 
+    align-items: center;
+    text-align: center; 
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
